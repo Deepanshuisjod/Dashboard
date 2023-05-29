@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Lora:ital,wght@0,600;1,400&family=Roboto+Mono:wght@600&display=swap');
+:root{
+    --white : rgb(255, 255, 255);
+    --pumpkin : #ff7417;
+    --burntor : #964000;
+}
+body{
+    margin: 0px;
+}
+/*Grid container style*/
+
+#grid-container{
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Lora', serif;
+    font-family: 'Roboto Mono', monospace;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+/*Sidebar style */
+
+#sidebar{
+    color: var(--white);
+    background-color: var(--pumpkin);
+    grid-row: 1/6;
+}
+#dashboard{
+    display: flex;
+    font-size: 50px;
+    padding: 30px;
+    padding-right: 30px;
+    justify-content: space-around;
+}
+#sidebar-items-group-1{
+    display: block;
+    padding-top: 25px;
+    padding-right: 20px;
+    font-size: 40px;
+    padding-left: 30px;
+    justify-content: space-around;
+}
+#sidebar-items-group-2{
+    display: block;
+    padding-top: 30px;
+    padding-right: 20px;
+    font-size: 40px;
+    padding-left: 30px;
+    justify-content: space-around;
+}
+.item{
+    display: flex;    
+}
+.text{
+    padding: 15px;
+}
+
+/*Header style*/
+
+#header{
+    background-color: rgb(255, 255, 255);
+    grid-column: 2/3;
+    box-shadow: rgba(80, 75, 75, 0.35) 0px 5px 15px;
+    position: relative;
+    display: block;
+}
+#header-item-1{
+    padding: 20px;
+}
+.search-bar{
+    background-color: rgb(223, 223, 223);
+    width: 800px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 20px 20px 20px 20px;
+}
+.notifications-tab{
+    display: flex;
+    padding-left: 100px;
+    justify-content: space-between;
+}
+.user-name{
+    font-size: 30px;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+#header-item-2{
+    display: flex;
+    padding: 20px;
+}
+#button{
+    display: flex;
+    justify-content: end;
+    margin-left: 525px;
+    margin-top: 20px;
+}
+.new  {
+    margin-right: 20px;
+    background-color: var(--pumpkin);
+    width: 120px;
+    height: 30px;
+    justify-content: center;
+    border-radius: 20px 20px 20px 20px;
+    
+}
+.upload  {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: var(--pumpkin);
+    width: 120px;
+    height: 30px;
+    justify-content: center;
+    border-radius: 20px 20px 20px 20px;
+}
+.share  {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: var(--pumpkin);
+    width: 120px;
+    height: 30px;
+    justify-content: center;
+    border-radius: 20px 20px 20px 20px;
+}
+/*Main-content style*/
+
+#main-content{
+    background-color: rgb(235, 227, 221);
+    grid-area: 2/2/6/3;
+}
