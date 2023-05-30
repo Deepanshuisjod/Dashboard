@@ -93,7 +93,7 @@ body{
     display: flex;
     justify-content: end;
     margin-left: 525px;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 .new  {
     margin-right: 20px;
@@ -127,4 +127,124 @@ body{
 #main-content{
     background-color: rgb(235, 227, 221);
     grid-area: 2/2/6/3;
+    display: grid;
+    grid-template-columns: 30px repeat(2,1.5fr) 30px 1fr 45px;
+    grid-template-rows: 50px repeat(3,1fr) 50px;
+    gap: 30px;
+}
+#projects{
+    display: grid;
+}
+.text-item-projects{
+    font-size: 30px;
+}
+.one{
+    grid-area: 1/2/2/3;
+}
+.two{
+    grid-area: 1/5/2/6;
+}
+.three{
+    grid-area: 3/5/4/6;
+    display: flex;
+    align-items: end;
+}
+.project-text{
+    display: flex;
+    font-size: 18px;
+}
+.project1{
+    grid-area: 2/2/3/3;
+    background-color: var(--white);
+    border-radius: 10px 10px 10px 10px;
+    border-left: 8px solid var(--burntor);
+    box-shadow: rgba(80, 75, 75, 0.35) 0px 5px 15px;
+    padding: 20px;
+}
+.project2{
+    grid-area: 2/3/3/4;
+    background-color: var(--white);
+    border-radius: 10px 10px 10px 10px;
+    border-left: 8px solid var(--burntor);
+    box-shadow: rgba(80, 75, 75, 0.35) 0px 5px 15px;
+    padding: 20px;
+}
+.project3{
+    grid-area: 3/2/4/3;
+    background-color: var(--white);
+    border-radius: 10px 10px 10px 10px;
+    border-left: 8px solid var(--burntor);
+    box-shadow: rgba(80, 75, 75, 0.35) 0px 5px 15px;
+    padding: 20px;
+}
+.project4{
+    grid-area: 3/4/4/3;
+    background-color: var(--white);
+    border-radius: 10px 10px 10px 10px;
+    border-left: 8px solid var(--burntor);
+    box-shadow: rgba(80, 75, 75, 0.35) 0px 5px 15px;
+    padding: 20px;
+}
+.project5{
+    grid-area: 4/2/5/3;
+    background-color: var(--white);
+    border-radius: 10px 10px 10px 10px;
+    border-left: 8px solid var(--burntor);
+    box-shadow: rgba(80, 75, 75, 0.35) 0px 5px 15px;
+    padding: 20px;
+}
+.project6{
+    grid-area: 4/3/5/4;
+    background-color: var(--white);
+    border-radius: 10px 10px 10px 10px;
+    border-left: 8px solid var(--burntor);
+    box-shadow: rgba(80, 75, 75, 0.35) 0px 5px 15px;
+    padding: 20px;
+}
+.projects-icon{
+    display: flex;
+    align-content: flex-end;
+}
+#annoucement{
+    grid-area: 2/5/3/6;
+    display: grid;
+    grid-template-columns: 20px 1fr 20px ;
+    grid-template-rows: 20px repeat(3,1fr) 20px;
+    background-color: var(--white);
+    box-shadow: rgba(80, 75, 75, 0.35) 0px 5px 15px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.site-maintenance{
+    grid-area: 2/2/3/3;
+}
+.comm-share-day{
+    grid-area: 3/2/4/3;
+}
+.update-pp{
+    grid-area: 4/2/5/3;
+}
+#trending{
+    grid-area: 4/5/5/6;
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    background-color: var(--white);
+    box-shadow: rgba(80, 75, 75, 0.35) 0px 5px 15px;
+    border-radius: 10px 10px 10px 10px;
+}
+.user1{
+    grid-row: 1/2;
+}
+.user2{
+    grid-row: 2/3;
+}
+.user3{
+    grid-row: 3/4;
+}
+.user4{
+    grid-row: 4/5;
+}
+.name{
+    display: block;
+    margin-top: 20px;
 }
